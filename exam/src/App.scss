@@ -131,14 +131,16 @@ body {
         font-size: 26px
       }
 
-      .info {
-        margin: 30px;
-        border: 1px solid $dark;
-        border-radius: 12px;
-        padding: 10px;
-        background-color: $white-transp;
-      }
+
     }
+  }
+
+  .info {
+    margin: 30px;
+    border: 1px solid $dark;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: $white-transp;
   }
 
   .nav {
@@ -178,6 +180,10 @@ body {
     padding-top: 160px;
 
     .create {
+      border: 1px solid $dark;
+      border-radius: 8px;
+      padding-bottom: 20px;
+
       input {
         margin: 10px;
         font-weight: bold;
@@ -193,7 +199,8 @@ body {
 
   }
 
-  .services {
+  .services,
+  .masters {
     // background-color: black;
 
     ul {
@@ -214,6 +221,97 @@ body {
         .red {
           fill: red;
         }
+      }
+    }
+  }
+
+  .masters {
+    margin-left: 40px;
+  }
+
+  .editas {
+    // position: absolute;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $dark-transp;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .edito-content {
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 12px;
+
+      .edito-header {
+        margin: 10px;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        h2 {
+          margin-top: 10px;
+          font-size: 12px;
+        }
+
+        .close {
+          border-radius: 5px;
+          border: 1px solid black;
+          // font-size: 30px;
+          padding: 10px;
+          background-color: $dark-transp;
+          transition: 0.3s ease-in;
+        }
+
+      }
+
+      label {
+        color: $dark;
+        // font-size: 30px;
+        text-decoration: underline;
+      }
+
+      input {
+
+        // font-size: 28px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background: none;
+        border: 1px solid black;
+        border-radius: 6px;
+      }
+
+      .edito-footer {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        button {
+          padding: 0px 10px;
+          font-size: 20px;
+
+          // background-color: $spalva;
+          // margin-top: 30px;
+          // font-weight: bold;
+          border-radius: 20px;
+          border: 1px solid black;
+          transition: 0.3s ease-in;
+
+        }
+
+
       }
     }
   }

@@ -7,7 +7,7 @@ function List() {
   console.log(masters);
 
   return (
-    <div className="flex flex-column">
+    <div className="flex flex-column masters">
       <h2>List of masters</h2>
       <ul>
         {masters

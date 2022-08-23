@@ -40,13 +40,11 @@ function Line({ line }) {
             <svg>
               <use href="#edit" />
             </svg>
-            edit
           </button>
           <button className="delete" type="button" onClick={handleDelete}>
-            <svg>
+            <svg className="red">
               <use href="#delete" />
             </svg>
-            delete
           </button>
         </div>
       </div>

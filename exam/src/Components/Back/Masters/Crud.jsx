@@ -5,11 +5,13 @@ import List from './List';
 
 function Crud() {
   return (
-    <div>
+    <div className="back">
       <Nav />
-      <Create />
-      <List />
-      <Edit />
+      <div className="flex">
+        <Create />
+        <List />
+        <Edit />
+      </div>
     </div>
   );
 }

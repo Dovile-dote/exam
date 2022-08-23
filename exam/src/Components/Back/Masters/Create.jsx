@@ -34,7 +34,7 @@ function Create() {
   };
 
   return (
-    <div>
+    <div className="create flex flex-column">
       <h2>Create new Master</h2>
       {/* <div className="selectai"> */}
       <select value={service} onChange={(e) => setService(e.target.value)}>
