@@ -13,7 +13,7 @@ function Line({ line }) {
   };
 
   return (
-    <li>
+    <li className="flex">
       <h3>{line.title}</h3>
       <p>{line.city}</p>
       <div className="buttons">
@@ -21,18 +21,11 @@ function Line({ line }) {
           <svg>
             <use href="#edit" />
           </svg>
-          edit
         </button>
-        {/* {line.total ? (
-          <div className="clothes-count">
-            You have: <span>{line.total}</span> item in this categorie.
-          </div>
-        ) : ( */}
         <button className="delete" type="button" onClick={handleDelete}>
           <svg>
             <use href="#delete" />
           </svg>
-          delete
         </button>
         {/* )} */}
       </div>

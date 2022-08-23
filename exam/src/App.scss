@@ -175,7 +175,7 @@ body {
   }
 
   .back {
-    padding-top: 100px;
+    padding-top: 160px;
 
     .create {
       input {
@@ -188,6 +188,32 @@ body {
         border-radius: 8px;
         background-color: $white-transp;
         color: $dark;
+      }
+    }
+
+  }
+
+  .services {
+    // background-color: black;
+
+    ul {
+
+      li {
+        border-bottom: 2px dashed $dark;
+        justify-content: space-between;
+
+        h3 {
+          margin-right: 30px;
+        }
+
+        button {
+          padding: 10px;
+          margin: 10px;
+        }
+
+        .red {
+          fill: red;
+        }
       }
     }
   }

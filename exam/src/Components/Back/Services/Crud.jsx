@@ -4,7 +4,7 @@ import List from './List';
 
 function Crud() {
   return (
-    <div className="clothes">
+    <div className="back">
       <Nav />
       <List />
       <Edit />

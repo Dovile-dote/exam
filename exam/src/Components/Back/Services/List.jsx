@@ -6,7 +6,7 @@ function List() {
   const { services } = useContext(BackContext);
 
   return (
-    <div className="flex flex-column">
+    <div className="flex flex-column services">
       <h2>List of Services</h2>
       <ul>
         {services
