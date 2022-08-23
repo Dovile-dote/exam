@@ -228,7 +228,7 @@ app.post('/admin/masters', (req, res) => {
 app.put('/admin/masters/:id', (req, res) => {
   const sql = `
   UPDATE masters
-  SET name = ?, surname = ?, specialization =?, service_id=?
+  SET name = ?, surname = ?, specialization =?, service_id=?, photo=?
   WHERE id = ?
   `;
   con.query(
@@ -237,8 +237,8 @@ app.put('/admin/masters/:id', (req, res) => {
       req.body.name,
       req.body.surname,
       req.body.specialization,
-      // req.body.photo,
       req.body.service_id,
+      req.body.photo,
       req.params.id,
     ],
     (err, result) => {

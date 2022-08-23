@@ -44,13 +44,13 @@ function Front({ show }) {
   return (
     <FrontContext.Provider value={{ masters, services }}>
       {show === 'sign-in' ? (
-        <div className="flex">
+        <div className="flex flex-column">
           <h2>
             Already have acount? <a href="http://localhost:3000/admin">Go!</a>
           </h2>
           <div>
             <div>
-              <div>
+              <div className="flex flex-column create">
                 <div>
                   name:{' '}
                   <input
